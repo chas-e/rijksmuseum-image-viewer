@@ -16,26 +16,37 @@
 </head>
 
 <body>
-    <nav class="indigo darken-4" id="navigation"></nav>
-    <main class="container">
+    <nav class="indigo darken-4 grey-text" id="navigation">Rijksmuseum Art Viewer 3000</nav>
+    <main class="large-container">
 
+        <div id="input-junk"><input type="text" id="usr-input" placeholder="Enter an Artist or Title of a Work" /><button id="submit">Submit</button>
+        </div>
+        <div id="rijk-img"><img class="responsive-img" src="https://imgur.com/nuzNGTE"></div>
+        <section id='small-container'>
+            <h4 class="center">Art Is Cool Yo!</h4>
+            <table class="responsive-table striped" id="art-table">
+                <thead>
+                    <tr>
+                        <th id="long-title">Long Title</th>
+                        <th id="artist">Principal or First Maker</th>
+                        <th id="art-img">Image</th>
+                    </tr>
+                </thead>
+
+                <tbody id="content">
+                    <tr>
+                        <td id="lt-content">Long Title stuff goes here</td>
+                        <td id="artist-content">Artist stuff goes here</td>
+                        <td id="image-content">Image stuff goes here</td>
+                    </tr>
+            </table>
+
+        </section>
     </main>
 
+    <footer class="indigo darken-4 grey-text">This is a lovely footer
 
-    <input type="text" id="usr-input" placeholder="Enter an Artist or Title of a Work" /><button>Submit</button>
-    <section class='container'>
-        <h4 class="center">Art Is Cool Yo!</h4>
-        <ul class="collection with-header">
-            <li class="collection-header">
-            </li>
-            <li class="collection-item grey-darken-4-text">
-                <div>Artwork<span class="secondary-content grey-darken-4-text">Detail</span></div>
-            </li>
-
-        </ul>
-    </section>
-
-    <footer></footer>
+    </footer>
 
 </body>
 
