@@ -1,7 +1,7 @@
 // API URL w my key: https://www.rijksmuseum.nl/api/nl/collection?key=fk8HjIgd&involvedMaker=Rembrandt+van+Rijn
 
 // Constants
-const baseURL = `https://www.rijksmuseum.nl/api/nl/collection?key=${}&involvedMaker=Rembrandt+van+Rijn`;
+const baseURL = `https://www.rijksmuseum.nl/api/nl/collection?key=${config.Rijksmuseum_API_Key}&involvedMaker=Rembrandt+van+Rijn`;
 
 
 // App's State Variables
