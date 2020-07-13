@@ -5,4 +5,17 @@
 
 body {
     font-family: 'Modak', cursive;
+    /* sticky footer recipe */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    /* sticky footer recipe cont'd */
+    flex-grow: 1;
+}
+
+#input-junk {
+    justify-content: space-evenly;
 }
