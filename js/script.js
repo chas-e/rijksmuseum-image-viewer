@@ -2,7 +2,7 @@
 
 // Constants
 const $usrInputEl = $("#input-junk");
-const baseURL = `https://www.rijksmuseum.nl/api/nl/collection?key=${config.RIJKS_API_KEY}&involvedMaker=${$usrInputEl}&p=1`;
+const baseURL = `https://www.rijksmuseum.nl/api/nl/collection?key=${config.RIJKS_API_KEY}&involvedMaker=Rembrandt+van+Rijn&p=1`;
 
 
 // App's State Variables
@@ -10,7 +10,7 @@ let artWork, input, artDetails, artist;
 
 
 // Cached Element References
-const $tableEl = $(".collection");
+const $tableEl = $("#content");
 const $artTableEl = $("#art-table");
 const $imgEl = $("#image-content");
 const $subBtn = $("#submit");
@@ -50,11 +50,11 @@ function getArt() {
 }
 
 function generateHTML() {
-    return artWork.map(function(tr) {
+    return artWork.artObjects.map(function(art) {
         return `<tr>
-        <td>${tr.artObjects[idx].title}</td>
-        <td>${tr.artObjects[idx].principalOrFirstMaker}</td>
-        <td><img class="responsive.img" src="url(${tr.artObjects[idx].webImage.url})</td>
+        <td>${art.title}</td>
+        <td>${art.principalOrFirstMaker}</td>
+        <td><img class="responsive-img" src="${art.webImage.url}"</td>
     </tr>`;
     });
 }
@@ -62,4 +62,5 @@ function generateHTML() {
 function render() {
     const html = generateHTML().join('');
     $tableEl.html(html);
+    console.log(html);
 }
