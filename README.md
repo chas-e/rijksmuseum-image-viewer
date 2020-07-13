@@ -13,3 +13,8 @@
 *Here are some "bonus features" but not required:*
 1 Have one or more complex user interface modules such as a carousel, drag and drop, a sticky nav, tooltips, etc
 2 Look into localstorage so you can save data to the user's browser
+
+## The Story of this Web App
+I wanted to center this project on artwork, and choose an art related API from which to fetch data, then render it in my Apps DOM. 
+
+By far, the easiest API to use from a list of public art and design APIS (published here: https://github.com/public-apis/public-apis) was the Rijksmuseum API. This definitely impacted my choice, as other APIs were a little out of my league as a newer engineer.
