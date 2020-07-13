@@ -1,15 +1,15 @@
 // API URL w my key: https://www.rijksmuseum.nl/api/nl/collection?key=fk8HjIgd&involvedMaker=Rembrandt+van+Rijn
 
 // Constants
-const baseURL = `https://www.rijksmuseum.nl/api/nl/collection?key=${config.Rijksmuseum_API_Key}&involvedMaker=Rembrandt+van+Rijn`;
+const baseURL = `https://www.rijksmuseum.nl/api/nl/collection?key=${config.RIJKS_API_KEY}&involvedMaker=Rembrandt+van+Rijn`;
 
 
 // App's State Variables
-let artWork, input, artDetails
+let artWork, input, artDetails, artist;
 
 
 // Cached Element References
-const $ulEl = $
+const $ulEl = $(".collection");
 
 
 // Event Listeners
@@ -19,11 +19,18 @@ const $ulEl = $
 
 // fetch data from Rijksmuseum
 
+getArt();
+
 function getArt() {
     const url = baseURL;
     $.ajax(url)
         .then(function(data) {
+                console.log(data);
 
-        })
+            },
+
+            function(error) {
+                console.log("error:", error);
+            });
 
 }
