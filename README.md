@@ -18,3 +18,26 @@
 I wanted to center this project on artwork, and choose an art related API from which to fetch data, then render it in my Apps DOM. 
 
 By far, the easiest API to use from a list of public art and design APIS (published here: https://github.com/public-apis/public-apis) was the Rijksmuseum API. This definitely impacted my choice, as other APIs were a little out of my league as a newer engineer.
+
+#Rijksmuseum Image Viewer
+
+A web app to quick search artworks from the Rijksmuseum in Amsterdam, NL
+
+##Screenshots
+Data Structure Examples/ User Stories
+Wireframes
+Screenshots from the finished app
+
+##Technologies
+* HTML
+* CSS
+* Materialize
+* Google Fonts
+* JavaScript
+* jQuery
+
+##Getting Started
+
+Click [here](https://chas-e.github.io/sei-project-one/)
+
+##Future Enhancements
