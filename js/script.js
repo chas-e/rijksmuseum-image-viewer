@@ -5,7 +5,7 @@ const $usrInputEl = $("#usr-input");
 
 
 // App's State Variables
-let artWork, input, artDetails, artist;
+let artWork, input, artDetails, $artImgEl;
 
 
 // Cached Element References
@@ -13,6 +13,7 @@ const $tableEl = $("#content");
 const $artTableEl = $("#art-table");
 const $imgEl = $("#image-content");
 const $subBtn = $("#submit");
+const $section = $("#small-container");
 
 
 
@@ -21,10 +22,14 @@ $subBtn.on('click', handleClick);
 
 // Functions
 
-toggleTable();
+hideEls();
 
-function toggleTable() {
-    $artTableEl.toggle();
+function hideEls() {
+    $section.hide();
+}
+
+function showEls() {
+    $section.show();
 }
 
 function clearInput() {
@@ -33,7 +38,7 @@ function clearInput() {
 
 function handleClick(event) {
     getArt();
-    toggleTable();
+    showEls();
     clearInput();
 }
 
@@ -49,8 +54,6 @@ function getArt() {
                 console.log(data);
                 artWork = data;
                 render();
-
-
             },
 
             function(error) {
@@ -61,15 +64,15 @@ function getArt() {
 function generateHTML() {
     return artWork.artObjects.map(function(art) {
         return `<tr>
-        <td>${art.title}</td>
-        <td>${art.principalOrFirstMaker}</td>
-        <td><img class="responsive-img" src="${art.webImage.url}"</td>
-    </tr>`;
+            <td>${art.title}</td>
+            <td>${art.principalOrFirstMaker}</td>
+            <td><img class="responsive-img" src="${art.webImage ? art.webImage.url :"#"}"</td>
+            ${!art.webImage && "<td>Check out Google for an image of this work</td>"}
+        </tr>`;
     });
 }
 
 function render() {
     const html = generateHTML().join('');
     $tableEl.html(html);
-    console.log(html);
 }
