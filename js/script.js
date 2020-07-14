@@ -47,7 +47,6 @@ function getArt() {
             function(error) {
                 console.log("error:", error);
             });
-
 }
 
 function generateHTML() {
@@ -65,5 +64,3 @@ function render() {
     $tableEl.html(html);
     console.log(html);
 }
-
-// need function to handle inputs - making it match what the API needs
