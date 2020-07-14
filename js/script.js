@@ -1,8 +1,7 @@
 // API URL w my key: https://www.rijksmuseum.nl/api/nl/collection?key=fk8HjIgd&involvedMaker=Rembrandt+van+Rijn
 
 // Constants
-const $usrInputEl = $("#input-junk");
-const baseURL = `https://www.rijksmuseum.nl/api/nl/collection?key=${config.RIJKS_API_KEY}&involvedMaker=Rembrandt+van+Rijn&p=1`;
+const $usrInputEl = $("#usr-input");
 
 
 // App's State Variables
@@ -33,8 +32,10 @@ function handleClick(event) {
 getArt();
 
 function getArt() {
-    const url = baseURL;
-    $.ajax(url)
+
+    input = $usrInputEl.val();
+
+    $.ajax(`https://www.rijksmuseum.nl/api/en/collection?key=${config.RIJKS_API_KEY}&title=${input}&p=1`)
         .then(function(data) {
                 console.log(data);
                 artWork = data;
@@ -64,3 +65,5 @@ function render() {
     $tableEl.html(html);
     console.log(html);
 }
+
+// need function to handle inputs - making it match what the API needs
