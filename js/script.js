@@ -21,15 +21,24 @@ $subBtn.on('click', handleClick);
 
 // Functions
 
+toggleTable();
+
+function toggleTable() {
+    $artTableEl.toggle();
+}
+
+function clearInput() {
+    $usrInputEl.val(null);
+}
+
 function handleClick(event) {
     getArt();
+    toggleTable();
+    clearInput();
 }
 
 // fetch data from Rijksmuseum
 
-
-
-getArt();
 
 function getArt() {
 
@@ -45,7 +54,7 @@ function getArt() {
             },
 
             function(error) {
-                console.log("error:", error);
+                alert(error.responseJSON.message);
             });
 }
 
