@@ -5,7 +5,7 @@ const $usrInputEl = $("#usr-input");
 
 
 // App's State Variables
-let artWork, input, artDetails, $artImgEl;
+let artWork, input;
 
 
 // Cached Element References
