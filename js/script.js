@@ -49,7 +49,7 @@ function getArt() {
 
     input = $usrInputEl.val();
 
-    $.ajax(`https://www.rijksmuseum.nl/api/en/collection?key=${config.RIJKS_API_KEY}&title=${input}&p=1`)
+    $.ajax(`https://www.rijksmuseum.nl/api/en/collection?key=${config.RIJKS_API_KEY}&title=${input}&p=1&ps=20`)
         .then(function(data) {
                 console.log(data);
                 artWork = data;
