@@ -9,9 +9,15 @@ I wanted to center this project on artwork, and choose an art related API from w
 By far, the easiest API to use from a list of public art and design APIS (published here: https://github.com/public-apis/public-apis) was the Rijksmuseum API. This definitely impacted my choice, as other APIs were a little out of my league as a newer engineer.
 
 ## Screenshots
-Data Structure Examples/ User Stories
-Wireframes
-Screenshots from the finished app
+**Data Structure Examples & User Stories**
+![rijksmuseum-project-notes-2](https://i.imgur.com/cMc0ZQy.png)
+
+**Wireframes**
+![rijksmuseum-wireframe-landing](https://i.imgur.com/ibFpEuP.png)
+![rijksmuseum-search-results](https://i.imgur.com/DkRVpYJ.png)
+![rijksmuseum-work-details](https://i.imgur.com/I1he3Xl.png)
+
+**Screenshots from the finished app**
 
 ## Technologies
 * HTML
