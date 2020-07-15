@@ -19,3 +19,8 @@ main {
 #input-junk {
     justify-content: space-evenly;
 }
+
+#navigation {
+    font-size: x-large;
+    font-weight: 400;
+}
