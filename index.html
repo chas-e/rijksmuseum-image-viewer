@@ -16,34 +16,36 @@
 </head>
 
 <body>
-    <nav class="indigo darken-4 grey-text lighten-4" id="navigation">Rijksmuseum Art Viewer</nav>
-    <main class="large-container">
+    <nav class="center cyan lighten-3 amber-text text-lighten-5" id="navigation">Rijksmuseum Art Viewer</nav>
+    <main id="large-container">
 
-        <div id="input-junk"><input type="text" id="usr-input" placeholder="Enter a Title or Keyword" /><button id="submit">Submit</button>
+        <div class="container">
+            <div class="input-field" id="input-junk"><input type="text" id="usr-input" placeholder="Enter a Title or Keyword" /><button class="btn waves-effect waves-light teal lighten-3" type="submit" name="action" id="submit">Submit</button>
+            </div>
+            <section id='small-container'>
+                <h4 class="center">Selected Works from the Rijksmuseum in Amsterdam</h4>
+                <table class="responsive-table striped" id="art-table">
+                    <thead>
+                        <tr>
+                            <th id="long-title">Long Title</th>
+                            <th id="artist">Principal or First Maker</th>
+                            <th id="art-img">Image</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="content">
+                        <tr>
+                            <td id="lt-content"></td>
+                            <td id="artist-content"></td>
+                            <td id="image-content"></td>
+                        </tr>
+                </table>
+
+            </section>
         </div>
-        <section id='small-container'>
-            <h4 class="center">Selected Works from the Rijksmuseum in Amsterdam</h4>
-            <table class="responsive-table striped" id="art-table">
-                <thead>
-                    <tr>
-                        <th id="long-title">Long Title</th>
-                        <th id="artist">Principal or First Maker</th>
-                        <th id="art-img">Image</th>
-                    </tr>
-                </thead>
-
-                <tbody id="content">
-                    <tr>
-                        <td id="lt-content"></td>
-                        <td id="artist-content"></td>
-                        <td id="image-content"></td>
-                    </tr>
-            </table>
-
-        </section>
     </main>
 
-    <footer class="indigo darken-4 grey-text lighten-4">Welcome to the bottom of the page!</footer>
+    <footer class="center cyan lighten-3 amber-text text-lighten-5">Welcome to the bottom of the page!</footer>
 
 </body>
 
