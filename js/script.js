@@ -38,7 +38,6 @@ function clearInput() {
 
 function handleClick(event) {
     getArt();
-    showEls();
     clearInput();
 }
 
@@ -53,7 +52,7 @@ function getArt() {
         .then(function(data) {
                 console.log(data);
                 artWork = data;
-                render();
+                checkData();
             },
 
             function(error) {
@@ -71,12 +70,21 @@ function generateHTML() {
     });
 }
 
+function checkData() {
+    if (artWork.count === 0) {
+        renderError();
+    } else {
+        render();
+    }
+}
+
 function render() {
+    showEls();
     const html = generateHTML().join('');
     $tableEl.html(html);
 }
 
 function renderError() {
     hideEls();
-    alert("Sorry nothing matched that search, please try again.");
+    M.toast({ html: "Sorry nothing matched that search, please try again." });
 }
