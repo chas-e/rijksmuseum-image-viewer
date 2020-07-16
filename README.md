@@ -36,23 +36,6 @@ By far, the easiest API to use from a list of public art and design APIS (publis
  [Click here](https://chas-e.github.io/sei-project-one/) to open the app in your browser.
 
 ## Future Enhancements
-1 Adding A drag and drop feature that looks into local storage to allow users to save their favorite images to a personal gallery.
+1 Adding a drag and drop feature that looks into local storage to allow users to save their favorite images to a personal gallery.
 
 2 Fleshing out text transform to allow search by an artist's name that isn't affected by strict name requirements in the museum's API.
-
-
-<!-- ### SEI-R 629 Project One: Web Application using Rijksmuseum API
-
-## Mandatory To Pass: MVP - Minimum Viable Product
-*Your application must meet these requirements:*
-
-1 Built with HTML, CSS, JavaScript and jQuery
-2 Hosted on github pages
-3 Frequent Commits to github
-4 A README.mdfile with explanations of the technologies used, the approach taken, a link to your live site, installation instructions, unsolved problems, etc.
-5 Use AJAX to make a request to an external data source like OMDBapi and insert some of the data retrieved into the DOM
-
-
-*Here are some "bonus features" but not required:*
-1 Have one or more complex user interface modules such as a carousel, drag and drop, a sticky nav, tooltips, etc
-2 Look into localstorage so you can save data to the user's browser -->
