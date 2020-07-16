@@ -16,6 +16,10 @@ main {
     flex: 1 0 auto;
 }
 
+#art-table {
+    display: hidden;
+}
+
 #input-junk {
     justify-content: space-evenly;
     margin: 10rem;
