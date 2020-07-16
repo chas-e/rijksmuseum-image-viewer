@@ -22,8 +22,6 @@ $subBtn.on('click', handleClick);
 
 // Functions
 
-hideEls();
-
 function hideEls() {
     $section.hide();
 }
