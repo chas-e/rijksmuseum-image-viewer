@@ -16,8 +16,8 @@ main {
     flex: 1 0 auto;
 }
 
-#art-table {
-    display: hidden;
+#small-container {
+    display: none;
 }
 
 #input-junk {
