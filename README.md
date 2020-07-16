@@ -17,11 +17,15 @@ By far, the easiest API to use from a list of public art and design APIS (publis
 ![rijksmuseum-search-results](https://i.imgur.com/DkRVpYJ.png)
 ![rijksmuseum-work-details](https://i.imgur.com/I1he3Xl.png)
 
-**Screenshots from the finished app**
+**Screenshots from the Finished App**
+![Screen Shot 2020-07-16 at 2.22.47 PM](https://i.imgur.com/vN8lAMZ.png)
+![Screen Shot 2020-07-16 at 2.24.34 PM](https://i.imgur.com/dWDZufK.png)
+![Screen Shot 2020-07-16 at 2.25.17 PM](https://i.imgur.com/cCVODaf.png)
 
 ## Technologies
-* HTML
-* CSS
+* HTML5
+* CSS3
+* CSS Flexbox
 * Materialize
 * Google Fonts
 * JavaScript
@@ -32,6 +36,10 @@ By far, the easiest API to use from a list of public art and design APIS (publis
  [Click here](https://chas-e.github.io/sei-project-one/) to open the app in your browser.
 
 ## Future Enhancements
+1 Adding A drag and drop feature that looks into local storage to allow users to save their favorite images to a personal gallery.
+
+2 Fleshing out text transform to allow search by an artist's name that isn't affected by strict name requirements in the museum's API.
+
 
 <!-- ### SEI-R 629 Project One: Web Application using Rijksmuseum API
 
