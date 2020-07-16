@@ -49,7 +49,7 @@ function getArt() {
 
     input = $usrInputEl.val();
 
-    $.ajax(`https://www.rijksmuseum.nl/api/en/collection?key=${config.RIJKS_API_KEY}&title=${input}&p=1&ps=20`)
+    $.ajax(`https://www.rijksmuseum.nl/api/en/collection?key=${config.RIJKS_API_KEY}&title=${input}&p=1&ps=20&imgonly=true`)
         .then(function(data) {
                 console.log(data);
                 artWork = data;
@@ -67,7 +67,6 @@ function generateHTML() {
             <td>${art.title}</td>
             <td>${art.principalOrFirstMaker}</td>
             <td><img class="responsive-img" src="${art.webImage ? art.webImage.url :"#"}"</td>
-            ${!art.webImage && "<td>Check out Google for an image of this work</td>"}
         </tr>`;
     });
 }
@@ -75,4 +74,9 @@ function generateHTML() {
 function render() {
     const html = generateHTML().join('');
     $tableEl.html(html);
+}
+
+function renderError() {
+    hideEls();
+    alert("Sorry nothing matched that search, please try again.");
 }
