@@ -45,7 +45,7 @@ function getArt() {
 
     input = $usrInputEl.val();
 
-    $.ajax(`https://www.rijksmuseum.nl/api/en/collection?key=${config.RIJKS_API_KEY}&title=${input}&p=1&ps=20&imgonly=true`)
+    $.ajax(`https://project1-629.herokuapp.com/[yournamehere]?search=${input}`)
         .then(function(data) {
                 artWork = data;
                 checkData();
