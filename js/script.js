@@ -45,7 +45,7 @@ function getArt() {
 
     input = $usrInputEl.val();
 
-    $.ajax(`https://project1-629.herokuapp.com/chas?search=${input}`)
+    $.ajax(`https://project1-629.herokuapp.com/chas?title=${input}`)
         .then(function(data) {
                 artWork = data;
                 checkData();
