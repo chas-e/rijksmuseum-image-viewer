@@ -33,7 +33,7 @@ By far, the easiest API to use from a list of public art and design APIS (publis
 
 ## Getting Started
 
- [Click here](https://chas-e.github.io/sei-project-one/) to open the app in your browser.
+ [Click here](https://chas-e.github.io/rijksmuseum-image-viewer/) to open the app in your browser.
 
 ## Future Enhancements
 1 Adding a drag and drop feature that looks into local storage to allow users to save their favorite images to a personal gallery.
