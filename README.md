@@ -1,4 +1,3 @@
-
 # Rijksmuseum Image Viewer
 
 A web app to quick search artworks from the Rijksmuseum in Amsterdam, NL
